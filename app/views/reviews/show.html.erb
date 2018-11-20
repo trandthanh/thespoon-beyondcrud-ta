@@ -1,0 +1,9 @@
+<%= @review.content %>
+
+<%= @review.restaurant.name %>
+
+<%= link_to "Edit review", edit_review_path(@review) %>
+<%= link_to "Destroy review", review_path(@review), method: :delete, data: { confirm: "Are you sure?"}  %>
+
+
+<%= link_to "test", restaurant_reviews_path(@review.restaurant.id) %>
